@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TicTacToe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="gameContainer">
+        <h1>TicTacToe</h1>
+        <label for="mode">Select Mode: </label>
+            <select id="mode">
+                <option value="single">Single Player</option>
+                <option value="multi">Multiplayer</option>
+         </select>
+        <label for="difficulty">Select Difficulty: </label>
+        <select id="difficulty">
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+        </select>
+        <div id="cellContainer">
+            <div data-index="0" class="cell"></div>
+            <div data-index="1" class="cell"></div>
+            <div data-index="2" class="cell"></div>
+            <div data-index="3" class="cell"></div>
+            <div data-index="4" class="cell"></div>
+            <div data-index="5" class="cell"></div>
+            <div data-index="6" class="cell"></div>
+            <div data-index="7" class="cell"></div>
+            <div data-index="8" class="cell"></div>
+        </div>
+        <h2 id="statusText"></h2>
+        <button id="restartButton">Restart</button>
+    </div>
+        <script src="index.js"></script>
+</body>
+</html>
